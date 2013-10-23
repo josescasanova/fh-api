@@ -1,0 +1,54 @@
+<!-- TOP
+================================================ -->
+<div id="top-bar" class="table">
+	
+	<div id="from" class="address table-row">
+		<span class="table-cell">From</span>
+		<form class="table-cell" ng-submit="searchMap(pickupLocation, 'pickup')" id="pickup-search">
+			<input ng-model="pickupLocation" class="map-search"  value="pickupLocation" placeholder="Where are you?" />
+		</form>
+	</div>
+	
+	
+	<div id="to" class="address table-row" ng-show="pickup_is_set">
+		<span class="table-cell">To</span> 
+		<form id="dropoff-search" ng-submit="searchMap(dropoffLocation)" class="table-cell">
+			<input class="map-search" ng-change="dropoff_is_set = false" ng-model="dropoffLocation" value="dropoffLocation" placeholder="Where to?" />
+		</form>	
+	</div>
+</div>
+
+<!-- THE MAP
+================================================ -->
+<div id="tortilla">
+	
+	<div id="calculator" ng-show="dropoff_pin_dropped" title="Based on an average of $3.50 per mile">
+		<div id="distance">{{ distance }}</div> 
+		<div id="cost">$<span id="number">{{ cost_estimate }}</span><span id="star">*</span></div>
+	</div>
+
+	<div id="shadow"></div>
+	<div id="burrito-map"></div>
+</div>
+
+
+<!-- BOTTOM
+================================================ -->
+<div id="bottom-bar">
+	<form id="final-step" ng-show="show_contact_info">
+		<h3>Almost Done!</h3>
+		<h4>Confirm your info and hit send</h4>
+		<input ng-model="contact_name" placeholder="Your Name"/>
+		<input ng-model="contact_number" placeholder="Your Phone Number"/>
+		<button ng-click="sendRequest()">{{ submit_request_button }}</button>
+	</form>
+
+	<button ng-if="!pickup_is_set" ng-click="setPickup();">Pick me up here</button>
+	
+	<button 
+		ng-if="pickup_is_set && !dropoff_is_set" 
+		ng-click="setDropoff(); showFinalStep()" 
+		ng-disabled="!dropoff_pin_dropped">
+			Drop me off here 
+	</button>
+</div>
