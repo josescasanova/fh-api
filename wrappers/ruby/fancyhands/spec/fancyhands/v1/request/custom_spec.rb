@@ -1,3 +1,4 @@
+require 'spec_helper'
 require 'fancyhands/v1/request'
 
 module Fancyhands
@@ -38,14 +39,9 @@ module Fancyhands
             build_request('title', 'desc', 1.0, '2014-05-15T10:09:08Z', {})
           end
 
-          let(:requester) { double(:requester) }
-
-          before { request.stub(:requester).and_return(requester) }
-
           it "posts the fields and the fancyhands endpoint to the requester" do
-            requester.should_receive(:post)
-              .with('/request/custom',
-                    'title', 'desc', 1.0, '2014-05-15T10:09:08Z', {})
+            Requester.should_receive(:post).with('/request/custom', 'title',
+                                           'desc', 1.0, '2014-05-15T10:09:08Z', {})
             request.create
           end
         end

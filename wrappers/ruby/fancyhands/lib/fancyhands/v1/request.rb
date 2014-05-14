@@ -1,3 +1,4 @@
+require 'fancyhands/v1/request/requester'
 require 'fancyhands/v1/request/custom'
 
 module Fancyhands
