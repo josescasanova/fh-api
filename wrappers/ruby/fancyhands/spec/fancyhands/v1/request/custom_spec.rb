@@ -4,8 +4,8 @@ module Fancyhands
   module V1
     module Request
       describe Custom do
-        def build_request(*args)
-          Custom.new(*args)
+        def build_request(title, desc, bid, exp_date, custom_fields = {})
+          Custom.new(title, desc, bid, exp_date, custom_fields)
         end
 
         describe '#initialize' do
@@ -30,6 +30,23 @@ module Fancyhands
             request.description.should == 'desc'
             request.bid.should == 1.0
             request.expiration_date.should == '2014-05-15T10:09:08Z'
+          end
+        end
+
+        describe '#create' do
+          let(:request) do
+            build_request('title', 'desc', 1.0, '2014-05-15T10:09:08Z', {})
+          end
+
+          let(:requester) { double(:requester) }
+
+          before { request.stub(:requester).and_return(requester) }
+
+          it "posts the fields and the fancyhands endpoint to the requester" do
+            requester.should_receive(:post)
+              .with('/request/custom',
+                    'title', 'desc', 1.0, '2014-05-15T10:09:08Z', {})
+            request.create
           end
         end
       end
