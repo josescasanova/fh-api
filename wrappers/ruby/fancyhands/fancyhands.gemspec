@@ -1,16 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'fh/api/version'
+require 'fancyhands/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "fh-api"
-  spec.version       = Fh::Api::VERSION
-  spec.authors       = ["Joe Sak"]
-  spec.email         = ["joe@joesak.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.name          = "fancyhands"
+  spec.version       = Fancyhands::VERSION
+  spec.authors       = ["Joe Sak", "Jose Casanova"]
+  spec.email         = ["joe@joesak.com", "jose@josecasanova.com"]
+  spec.summary       = %q{A simple ruby wrapper for Fancyhands API}
+  spec.homepage      = "https://github.com/josescasanova/fh-api"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
