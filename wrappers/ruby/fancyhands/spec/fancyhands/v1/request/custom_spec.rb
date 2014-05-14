@@ -1,5 +1,6 @@
 require 'spec_helper'
-require 'fancyhands/v1/request'
+require 'fancyhands/v1/request/requester'
+require 'fancyhands/v1/request/custom'
 
 module Fancyhands
   module V1

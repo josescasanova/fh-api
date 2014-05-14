@@ -31,6 +31,11 @@ module Fancyhands
           raise ExpirationDateRequiredError if expiration_date.strip.empty?
         end
       end
+
+      class TitleRequiredError < StandardError; end
+      class DescriptionRequiredError < StandardError; end
+      class BidRequiredError < StandardError; end
+      class ExpirationDateRequiredError < StandardError; end
     end
   end
 end
