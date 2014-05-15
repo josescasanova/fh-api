@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.fancyhands.com/api/v1/request/custom
+    body:
+      encoding: US-ASCII
+      string: bid=1.0&description=desc&expiration_date=2014-05-16T10%3A09%3A08Z&title=title
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - OAuth oauth_consumer_key="<API_KEY>", oauth_nonce="kFzuGa01xAsJOX2SyY8je9K9F2TwKZoEkKuTP00",
+        oauth_signature="7QsIp4ZI%2Bjw1mhlxAsWSHQVSBX4%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1400125508", oauth_version="1.0"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Thu, 15 May 2014 03:45:10 GMT
+      Server:
+      - Google Frontend
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"user_key": "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIYx8L1BQw", "numeric_status":
+        1, "title": "title", "content": "desc", "date_updated": "2014-05-15T03:45:09.180030",
+        "status": "In Progress", "bonus": 0.0, "price": 0.84999999999999998, "api_bid":
+        1.0, "key": "ahBzfmZhbmN5aGFuZHMtaHJkciULEgZGSFVzZXIYx8L1BQwLEglGSFJlcXVlc3QYgICAgIjgmgoM",
+        "phone_calls": [], "messages": [], "date_created": "2014-05-15T03:45:08.983500"}'
+    http_version: 
+  recorded_at: Thu, 15 May 2014 03:45:10 GMT
+recorded_with: VCR 2.4.0
