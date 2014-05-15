@@ -1,3 +1,5 @@
+require 'yaml'
+
 module Fancyhands
   class Configuration
     attr_reader :key, :secret

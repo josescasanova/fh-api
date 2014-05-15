@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'fancyhands'
 require 'fancyhands/v1/request/requester'
 
 module Fancyhands
@@ -20,7 +21,7 @@ module Fancyhands
                            { title: 'title',
                              description: 'desc',
                              bid: 1.0,
-                             expiration_date: '2014-05-15T10:09:08Z' })
+                             expiration_date: '2014-05-16T10:09:08Z' })
 
             post.msg.should == 'Created'
             post.code.should == '201'

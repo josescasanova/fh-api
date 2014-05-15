@@ -9,6 +9,10 @@ module Fancyhands
             client.request(:post, endpoint, nil, {}, body)
           end
 
+          def client
+            OAuth::Consumer.new(Fancyhands.key, Fancyhands.secret, site: base_uri)
+          end
+
           private
           def base_uri
             "https://www.fancyhands.com/api/v1"
