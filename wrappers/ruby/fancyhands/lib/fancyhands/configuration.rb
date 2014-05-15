@@ -5,11 +5,13 @@ module Fancyhands
     attr_reader :key, :secret
 
     def set_key(key)
-      @key = key
+      key ||= ENV['FANCYHANDS_KEY']
+      @key  = key
     end
 
     def set_secret(secret)
-      @secret = secret
+      secret ||= ENV['FANCYHANDS_SECRET']
+      @secret  = secret
     end
 
     def self.from_config
