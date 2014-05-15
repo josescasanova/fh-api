@@ -1,15 +1,17 @@
+require 'oauth'
+
 module Fancyhands
   module V1
     module Request
       class Requester
         class << self
-          def post(endpoint, *args)
-            client.request(:post, url(endpoint), *args)
+          def post(endpoint, body)
+            client.request(:post, endpoint, nil, {}, body)
           end
 
           private
-          def url(endpoint)
-            "https://www.fancyhands.com/api/v1#{endpoint}"
+          def base_uri
+            "https://www.fancyhands.com/api/v1"
           end
         end
       end

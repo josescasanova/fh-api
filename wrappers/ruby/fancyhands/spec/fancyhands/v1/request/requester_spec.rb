@@ -14,6 +14,17 @@ module Fancyhands
               '/request/something', nil, {}, { some: 'request_body' })
             Requester.post('/request/something', { some: 'request_body' })
           end
+
+          it 'creates custom requests', :vcr do
+            post = Requester.post('/request/custom',
+                           { title: 'title',
+                             description: 'desc',
+                             bid: 1.0,
+                             expiration_date: '2014-05-15T10:09:08Z' })
+
+            post.msg.should == 'Created'
+            post.code.should == '201'
+          end
         end
       end
     end
