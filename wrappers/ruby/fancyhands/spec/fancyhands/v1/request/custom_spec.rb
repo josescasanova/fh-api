@@ -41,8 +41,12 @@ module Fancyhands
           end
 
           it "posts the fields and the fancyhands endpoint to the requester" do
-            Requester.should_receive(:post).with('/request/custom', 'title',
-                                           'desc', 1.0, '2014-05-15T10:09:08Z', {})
+            Requester.should_receive(:post).with('/request/custom',
+                                     { title: 'title',
+                                       description: 'desc',
+                                       bid: 1.0,
+                                       expiration_date: '2014-05-15T10:09:08Z',
+                                       custom_fields: {} })
             request.create
           end
         end

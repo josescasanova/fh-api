@@ -11,9 +11,10 @@ module Fancyhands
             Requester.stub(:client) { oauth_client }
 
             oauth_client.should_receive(:request).with(:post,
-              'https://www.fancyhands.com/api/v1/request/something',
-              'arg1', 'arg2', 3.2, {})
-            Requester.post('/request/something', 'arg1', 'arg2', 3.2, {})
+              '/request/something', nil, {}, { some: 'request_body' })
+            Requester.post('/request/something', { some: 'request_body' })
+          end
+
           end
         end
       end

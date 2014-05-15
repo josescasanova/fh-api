@@ -16,7 +16,11 @@ module Fancyhands
 
         def create
           requester.post('/request/custom',
-                         title, description, bid, expiration_date, custom_fields)
+                         { title: title,
+                           description: description,
+                           bid: bid,
+                           expiration_date: expiration_date,
+                           custom_fields: custom_fields })
         end
 
         private
