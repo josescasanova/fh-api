@@ -14,8 +14,6 @@ module Fancyhands
               '/request/something', nil, {}, { some: 'request_body' })
             Requester.post('/request/something', { some: 'request_body' })
           end
-
-          end
         end
       end
     end
