@@ -1,6 +1,7 @@
 require 'forwardable'
 require "fancyhands/version"
 require 'fancyhands/configuration'
+require 'fancyhands/v1'
 
 module Fancyhands
   extend SingleForwardable
