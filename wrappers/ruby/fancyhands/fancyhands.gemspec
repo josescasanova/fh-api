@@ -9,6 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Joe Sak", "Jose Casanova"]
   spec.email         = ["joe@joesak.com", "jose@josecasanova.com"]
   spec.summary       = %q{A simple ruby wrapper for Fancyhands API}
+  spec.description   = %q{See summary}
   spec.homepage      = "https://github.com/josescasanova/fh-api"
   spec.license       = "MIT"
 
@@ -18,11 +19,11 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake"
-  spec.add_development_dependency 'rspec',   '~> 2.13.0'
-  spec.add_development_dependency 'vcr',     '~> 2.4.0'
+  spec.add_development_dependency "rake",    '~> 10.3'
+  spec.add_development_dependency 'rspec',   '~> 2.13'
+  spec.add_development_dependency 'vcr',     '~> 2.4'
   spec.add_development_dependency 'webmock', '< 1.10'
-  spec.add_development_dependency 'pry',     '~> 0.9.12'
+  spec.add_development_dependency 'pry',     '~> 0.9'
 
-  spec.add_dependency 'oauth', '~> 0.4.7'
+  spec.add_dependency 'oauth', '~> 0.4'
 end
