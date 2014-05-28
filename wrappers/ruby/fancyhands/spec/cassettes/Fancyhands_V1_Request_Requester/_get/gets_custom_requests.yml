@@ -1,0 +1,191 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.fancyhands.com/api/v1/request/custom
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="<API_KEY>", oauth_nonce="7wCYTwlR9w8468KkhAtgzwn91aN7Pc7BHrG0G2abw0",
+        oauth_signature="9AouOLtL2bDVkFDHiV9BxrbqMB0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1401246820", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Wed, 28 May 2014 03:13:43 GMT
+      Server:
+      - Google Frontend
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"cursor": null, "requests": [{"user_key": "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIYx8L1BQw",
+        "numeric_status": 21, "title": "Title", "content": "Desc", "date_updated":
+        "2014-05-22T03:51:32.209710", "status": "Canceled", "bonus": 0.5, "price":
+        0.84999999999999998, "api_bid": 1.0, "key": "ahBzfmZhbmN5aGFuZHMtaHJkciULEgZGSFVzZXIYx8L1BQwLEglGSFJlcXVlc3QYgICAgKj5hgoM",
+        "phone_calls": [], "messages": [{"content": "Expired", "date_created": "2014-05-23T02:19:01.099760",
+        "local_date_created": "2014-05-22T22:19:01.099760-04:00", "content_type":
+        "text/plain"}], "date_created": "2014-05-22T03:51:31.925470"}, {"user_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIYx8L1BQw", "numeric_status": 21, "assistant_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIY7bylAww", "title": "hey jose", "content":
+        "i am testing from a rails console", "date_updated": "2014-05-15T04:17:19.553000",
+        "status": "Canceled", "bonus": 0.0, "assistant": "Scott P.", "price": 0.84999999999999998,
+        "api_bid": 1.0, "key": "ahBzfmZhbmN5aGFuZHMtaHJkciULEgZGSFVzZXIYx8L1BQwLEglGSFJlcXVlc3QYgICAgIi0hwoM",
+        "phone_calls": [], "messages": [{"content": "Cancelled", "date_created": "2014-05-15T04:24:45.335840",
+        "local_date_created": "2014-05-14T22:24:45.335840-06:00", "content_type":
+        "text/plain"}], "date_created": "2014-05-15T04:17:19.285810"}, {"user_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIYx8L1BQw", "numeric_status": 21, "assistant_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIY7bylAww", "title": "title", "content":
+        "desc", "date_updated": "2014-05-15T04:24:40.445520", "status": "Canceled",
+        "bonus": 0.0, "assistant": "Scott P.", "price": 0.84999999999999998, "api_bid":
+        1.0, "key": "ahBzfmZhbmN5aGFuZHMtaHJkciULEgZGSFVzZXIYx8L1BQwLEglGSFJlcXVlc3QYgICAgIjgmgoM",
+        "phone_calls": [], "messages": [{"content": "Cancelled", "date_created": "2014-05-15T04:00:49.288010",
+        "local_date_created": "2014-05-15T00:00:49.288010-04:00", "content_type":
+        "text/plain"}, {"content": "Cancelled", "date_created": "2014-05-15T04:25:39.364610",
+        "local_date_created": "2014-05-14T22:25:39.364610-06:00", "content_type":
+        "text/plain"}], "date_created": "2014-05-15T03:45:08.983500"}, {"user_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIYx8L1BQw", "numeric_status": 21, "assistant_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIY7bylAww", "title": "title", "content":
+        "desc", "date_updated": "2014-05-15T03:37:04.668960", "status": "Canceled",
+        "bonus": 0.0, "assistant": "Scott P.", "price": 0.93999999999999995, "api_bid":
+        1.0, "key": "ahBzfmZhbmN5aGFuZHMtaHJkciULEgZGSFVzZXIYx8L1BQwLEglGSFJlcXVlc3QYgICAgPD7iwoM",
+        "phone_calls": [], "messages": [{"content": "Cancelled", "date_created": "2014-05-15T03:49:26.160830",
+        "local_date_created": "2014-05-14T23:49:26.160830-04:00", "content_type":
+        "text/plain"}, {"content": "Cancelled", "date_created": "2014-05-15T04:25:43.626700",
+        "local_date_created": "2014-05-14T22:25:43.626700-06:00", "content_type":
+        "text/plain"}], "date_created": "2014-05-15T03:37:04.465250"}, {"user_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIYx8L1BQw", "numeric_status": 21, "assistant_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIY7bylAww", "title": "title", "content":
+        "desc", "date_updated": "2014-05-15T03:36:59.608370", "status": "Canceled",
+        "bonus": 0.0, "assistant": "Scott P.", "price": 0.93999999999999995, "api_bid":
+        1.0, "key": "ahBzfmZhbmN5aGFuZHMtaHJkciULEgZGSFVzZXIYx8L1BQwLEglGSFJlcXVlc3QYgICAgPCdkgoM",
+        "phone_calls": [], "messages": [{"content": "Cancelled", "date_created": "2014-05-15T04:23:42.096520",
+        "local_date_created": "2014-05-14T22:23:42.096520-06:00", "content_type":
+        "text/plain"}], "date_created": "2014-05-15T03:36:59.330150"}, {"user_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIYx8L1BQw", "numeric_status": 21, "assistant_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIY7bylAww", "title": "title", "content":
+        "desc", "date_updated": "2014-05-15T03:13:22.724530", "status": "Canceled",
+        "bonus": 0.0, "assistant": "Scott P.", "price": 0.93999999999999995, "api_bid":
+        1.0, "key": "ahBzfmZhbmN5aGFuZHMtaHJkciULEgZGSFVzZXIYx8L1BQwLEglGSFJlcXVlc3QYgICAgPCJgwoM",
+        "phone_calls": [], "messages": [{"content": "Cancelled", "date_created": "2014-05-15T03:50:00.310650",
+        "local_date_created": "2014-05-14T23:50:00.310650-04:00", "content_type":
+        "text/plain"}, {"content": "Cancelled", "date_created": "2014-05-15T04:25:47.790800",
+        "local_date_created": "2014-05-14T22:25:47.790800-06:00", "content_type":
+        "text/plain"}], "date_created": "2014-05-15T03:13:22.485400"}, {"user_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIYx8L1BQw", "numeric_status": 21, "assistant_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIY7bylAww", "title": "title", "content":
+        "desc", "date_updated": "2014-05-15T02:14:40.391460", "status": "Canceled",
+        "bonus": 0.0, "assistant": "Scott P.", "price": 0.84999999999999998, "api_bid":
+        1.0, "key": "ahBzfmZhbmN5aGFuZHMtaHJkciULEgZGSFVzZXIYx8L1BQwLEglGSFJlcXVlc3QYgICAgPDWnAoM",
+        "phone_calls": [], "messages": [{"content": "Cancelled", "date_created": "2014-05-15T04:26:27.905940",
+        "local_date_created": "2014-05-14T22:26:27.905940-06:00", "content_type":
+        "text/plain"}], "date_created": "2014-05-15T02:14:40.189700"}, {"user_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIYx8L1BQw", "numeric_status": 21, "assistant_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIY7bylAww", "title": "title", "content":
+        "desc", "date_updated": "2014-05-15T02:12:34.824120", "status": "Canceled",
+        "bonus": 0.0, "assistant": "Scott P.", "price": 0.84999999999999998, "api_bid":
+        1.0, "key": "ahBzfmZhbmN5aGFuZHMtaHJkciULEgZGSFVzZXIYx8L1BQwLEglGSFJlcXVlc3QYgICAgPDCjQoM",
+        "phone_calls": [], "messages": [{"content": "Cancelled", "date_created": "2014-05-15T04:26:18.709800",
+        "local_date_created": "2014-05-14T22:26:18.709800-06:00", "content_type":
+        "text/plain"}], "date_created": "2014-05-15T02:12:34.576320"}, {"user_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIYx8L1BQw", "numeric_status": 21, "assistant_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIY7bylAww", "title": "title", "content":
+        "desc", "date_updated": "2014-05-15T02:11:54.458410", "status": "Canceled",
+        "bonus": 0.0, "assistant": "Scott P.", "price": 0.84999999999999998, "api_bid":
+        1.0, "key": "ahBzfmZhbmN5aGFuZHMtaHJkciULEgZGSFVzZXIYx8L1BQwLEglGSFJlcXVlc3QYgICAgPC4lAoM",
+        "phone_calls": [], "messages": [{"content": "Cancelled", "date_created": "2014-05-15T04:26:06.653390",
+        "local_date_created": "2014-05-14T22:26:06.653390-06:00", "content_type":
+        "text/plain"}], "date_created": "2014-05-15T02:11:54.239610"}, {"user_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIYx8L1BQw", "numeric_status": 21, "assistant_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIY7bylAww", "title": "title", "content":
+        "desc", "date_updated": "2014-05-15T02:09:51.073560", "status": "Canceled",
+        "bonus": 0.0, "assistant": "Scott P.", "price": 0.84999999999999998, "api_bid":
+        1.0, "key": "ahBzfmZhbmN5aGFuZHMtaHJkciULEgZGSFVzZXIYx8L1BQwLEglGSFJlcXVlc3QYgICAgLCvhQoM",
+        "phone_calls": [], "messages": [{"content": "Cancelled", "date_created": "2014-05-15T04:25:53.445790",
+        "local_date_created": "2014-05-14T22:25:53.445790-06:00", "content_type":
+        "text/plain"}], "date_created": "2014-05-15T02:09:50.866730"}, {"user_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIYx8L1BQw", "numeric_status": 21, "assistant_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIY7bylAww", "title": "title", "content":
+        "desc", "date_updated": "2014-05-15T01:12:05.646950", "status": "Canceled",
+        "bonus": 0.0, "assistant": "Scott P.", "price": 0.84999999999999998, "api_bid":
+        1.0, "key": "ahBzfmZhbmN5aGFuZHMtaHJkciULEgZGSFVzZXIYx8L1BQwLEglGSFJlcXVlc3QYgICAgLDzmAoM",
+        "phone_calls": [], "messages": [{"content": "Cancelled", "date_created": "2014-05-15T03:09:56.773650",
+        "local_date_created": "2014-05-14T21:09:56.773650-06:00", "content_type":
+        "text/plain"}], "date_created": "2014-05-15T01:12:05.396380"}, {"user_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIYx8L1BQw", "numeric_status": 21, "assistant_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIY7bylAww", "title": "title", "content":
+        "desc", "date_updated": "2014-05-14T02:53:56.629890", "status": "Canceled",
+        "bonus": 0.0, "assistant": "Scott P.", "price": 0.84999999999999998, "api_bid":
+        1.0, "key": "ahBzfmZhbmN5aGFuZHMtaHJkciULEgZGSFVzZXIYx8L1BQwLEglGSFJlcXVlc3QYgICAgLDQjgoM",
+        "phone_calls": [], "messages": [{"content": "Expired", "date_created": "2014-05-14T04:01:43.385550",
+        "local_date_created": "2014-05-14T00:01:43.385550-04:00", "content_type":
+        "text/plain"}], "date_created": "2014-05-14T02:53:56.269160"}, {"user_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIYx8L1BQw", "numeric_status": 21, "assistant_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIY7bylAww", "title": "title", "content":
+        "desc", "date_updated": "2014-05-14T04:02:10.943390", "status": "Canceled",
+        "bonus": 0.0, "assistant": "Scott P.", "price": 0.93999999999999995, "api_bid":
+        1.0, "key": "ahBzfmZhbmN5aGFuZHMtaHJkciULEgZGSFVzZXIYx8L1BQwLEglGSFJlcXVlc3QYgICAgNDHlwoM",
+        "phone_calls": [], "messages": [{"content": "Expired", "date_created": "2014-05-14T04:02:54.171480",
+        "local_date_created": "2014-05-13T22:02:54.171480-06:00", "content_type":
+        "text/plain"}], "date_created": "2014-05-14T02:53:46.431750"}, {"user_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIYx8L1BQw", "numeric_status": 21, "assistant_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIY7bylAww", "title": "title", "content":
+        "desc", "date_updated": "2014-05-14T02:53:24.796840", "status": "Canceled",
+        "bonus": 0.0, "assistant": "Scott P.", "price": 0.93999999999999995, "api_bid":
+        1.0, "key": "ahBzfmZhbmN5aGFuZHMtaHJkciULEgZGSFVzZXIYx8L1BQwLEglGSFJlcXVlc3QYgICAgNC9hgoM",
+        "phone_calls": [], "messages": [{"content": "Expired", "date_created": "2014-05-14T03:56:47.855830",
+        "local_date_created": "2014-05-13T21:56:47.855830-06:00", "content_type":
+        "text/plain"}], "date_created": "2014-05-14T02:53:24.432890"}, {"user_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIYx8L1BQw", "numeric_status": 20, "assistant_key":
+        "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIY7bylAww", "title": "title", "content":
+        "descrioption", "date_updated": "2014-04-30T02:33:43.142070", "status": "Closed",
+        "bonus": 0.0, "assistant": "Scott P.", "price": 2.5499999999999998, "api_bid":
+        3.0, "key": "ahBzfmZhbmN5aGFuZHMtaHJkciULEgZGSFVzZXIYx8L1BQwLEglGSFJlcXVlc3QYgICAgMCAlwoM",
+        "phone_calls": [], "messages": [{"key": "ahBzfmZhbmN5aGFuZHMtaHJkcnELEhJGSFJlcXVlc3QtbWVzc2FnZXMiPEZIVXNlci1tZXNzYWdlcy0xMjQxMTIwNy1GSFJlcXVlc3QtbWVzc2FnZXMtNTczMDY3MTc4MzgzNzY5NgwLEhBGSFJlcXVlc3RNZXNzYWdlGICAgICAgIAKDA",
+        "content": "this was an accident messing w. the api, cancel pls", "user":
+        "Jose Casanova", "content_type": "text/plain", "date_created": "2014-04-30T02:01:55.404230",
+        "type": "message-from-client"}], "date_created": "2014-04-30T01:41:53.175500"},
+        {"user_key": "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIYx8L1BQw", "numeric_status":
+        21, "title": "asdas", "content": "asdasd", "date_updated": "2014-04-30T02:01:51.326400",
+        "status": "Canceled", "bonus": 0.0, "price": 2.5499999999999998, "api_bid":
+        3.0, "key": "ahBzfmZhbmN5aGFuZHMtaHJkciULEgZGSFVzZXIYx8L1BQwLEglGSFJlcXVlc3QYgICAgIDbhgoM",
+        "phone_calls": [], "messages": [{"key": "ahBzfmZhbmN5aGFuZHMtaHJkcnELEhJGSFJlcXVlc3QtbWVzc2FnZXMiPEZIVXNlci1tZXNzYWdlcy0xMjQxMTIwNy1GSFJlcXVlc3QtbWVzc2FnZXMtNTY1OTAxNDU0OTQ3MTIzMgwLEhBGSFJlcXVlc3RNZXNzYWdlGICAgICAgIAKDA",
+        "content": "this was an accident messing w. the api, cancel pls", "user":
+        "Jose Casanova", "content_type": "text/plain", "date_created": "2014-04-30T02:01:50.751120",
+        "type": "message-from-client"}], "date_created": "2014-04-30T01:41:06.889830"},
+        {"user_key": "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIYx8L1BQw", "numeric_status":
+        21, "title": "adsasdad", "content": "tetinasdad", "date_updated": "2014-04-30T02:01:47.207300",
+        "status": "Canceled", "bonus": 0.0, "price": 2.5499999999999998, "api_bid":
+        3.0, "key": "ahBzfmZhbmN5aGFuZHMtaHJkciULEgZGSFVzZXIYx8L1BQwLEglGSFJlcXVlc3QYgICAgIDNmwoM",
+        "phone_calls": [], "messages": [{"key": "ahBzfmZhbmN5aGFuZHMtaHJkcnELEhJGSFJlcXVlc3QtbWVzc2FnZXMiPEZIVXNlci1tZXNzYWdlcy0xMjQxMTIwNy1GSFJlcXVlc3QtbWVzc2FnZXMtNTc1MDg5MjQ4OTg2NzI2NAwLEhBGSFJlcXVlc3RNZXNzYWdlGICAgICAgIAKDA",
+        "content": "this was an accident messing w. the api, cancel pls", "user":
+        "Jose Casanova", "content_type": "text/plain", "date_created": "2014-04-30T02:01:46.490750",
+        "type": "message-from-client"}], "date_created": "2014-04-30T01:39:30.684340"},
+        {"user_key": "ahBzfmZhbmN5aGFuZHMtaHJkcg8LEgZGSFVzZXIYx8L1BQw", "numeric_status":
+        21, "title": "Sample", "content": "sampeaasd", "date_updated": "2014-04-30T02:01:42.719230",
+        "status": "Canceled", "bonus": 0.0, "price": 2.4900000000000002, "api_bid":
+        2.9300000000000002, "key": "ahBzfmZhbmN5aGFuZHMtaHJkciULEgZGSFVzZXIYx8L1BQwLEglGSFJlcXVlc3QYgICAgICmkwoM",
+        "phone_calls": [], "messages": [{"key": "ahBzfmZhbmN5aGFuZHMtaHJkcnELEhJGSFJlcXVlc3QtbWVzc2FnZXMiPEZIVXNlci1tZXNzYWdlcy0xMjQxMTIwNy1GSFJlcXVlc3QtbWVzc2FnZXMtNTcxNDM2ODA4Nzk4MjA4MAwLEhBGSFJlcXVlc3RNZXNzYWdlGICAgICAgIAKDA",
+        "content": "this was an accident messing w. the api, cancel pls", "user":
+        "Jose Casanova", "content_type": "text/plain", "date_created": "2014-04-30T02:01:42.021870",
+        "type": "message-from-client"}], "date_created": "2014-04-29T22:34:44.609410"}]}'
+    http_version: 
+  recorded_at: Wed, 28 May 2014 03:13:43 GMT
+recorded_with: VCR 2.4.0
