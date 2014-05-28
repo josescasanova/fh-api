@@ -36,7 +36,7 @@ module Fancyhands
         end
 
         describe '#create' do
-          let(:request) do
+          let(:custom_request) do
             build_request('title', 'desc', 1.0, '2014-05-15T10:09:08Z', {})
           end
 
@@ -47,7 +47,39 @@ module Fancyhands
                                        bid: 1.0,
                                        expiration_date: '2014-05-15T10:09:08Z',
                                        custom_fields: {} })
-            request.create
+            custom_request.create
+          end
+        end
+
+        describe '.all' do
+          it 'gets all requests at first page' do
+            Requester.should_receive(:get).with('/request/custom', {})
+            Custom.all
+          end
+
+          { new: 1, open: 5, closed: 20, expired: 21 }.each do |status, code|
+            context "with #{status} status_code option" do
+              it "gets all requests at first page for #{status}" do
+                Requester.should_receive(:get).with('/request/custom',
+                                                    { status: code })
+                Custom.all({ status: status })
+              end
+            end
+          end
+
+          context 'with cursor option' do
+            it 'gets all requests at the given cursor position' do
+              Requester.should_receive(:get).with('/request/custom',
+                                                  { cursor: 3 })
+              Custom.all({ page: 3 })
+            end
+          end
+        end
+
+        describe '.find' do
+          it 'gets the request by key' do
+            Requester.should_receive(:get).with('/request/custom', { key: 3 })
+            Custom.find(3)
           end
         end
       end
